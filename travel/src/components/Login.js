@@ -17,7 +17,7 @@ class Login extends Component{
     }
     render(){        
         if (this.state.loggedIn === true) {
-            return <Redirect to='/Company' />
+            this.props.history.push('/Company')
           }  
         return(
                     
